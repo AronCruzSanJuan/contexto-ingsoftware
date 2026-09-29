@@ -1,25 +1,75 @@
-<mxfile host="app.diagrams.net">
-  <diagram id="contexto" name="Diagrama de contexto">
-    <mxGraphModel dx="1100" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="titulo" value="&lt;b&gt;Diagrama de contexto — [Nombre de su sistema]&lt;/b&gt;&lt;br&gt;Equipo: [nombre del equipo]" style="text;html=1;align=left;verticalAlign=top;fontSize=16;fontColor=#16324F;" vertex="1" parent="1">
-          <mxGeometry x="40" y="30" width="700" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="nota" value="Borren esta nota antes de entregar.&lt;br&gt;• Hay UN solo proceso: su sistema completo (el círculo).&lt;br&gt;• Cada rectángulo es una entidad externa. Dupliquen el de ejemplo para crear más.&lt;br&gt;• Cada flecha es un flujo de DATOS con nombre. Para crear una, arrastren desde el borde de una figura hacia otra.&lt;br&gt;• Aquí no van almacenes de datos." style="text;html=1;align=left;verticalAlign=top;fontSize=12;fillColor=#FBF7EE;strokeColor=#A8812B;spacing=10;" vertex="1" parent="1">
-          <mxGeometry x="40" y="680" width="560" height="110" as="geometry" />
-        </mxCell>
-        <mxCell id="proceso" value="0&lt;br&gt;&lt;b&gt;[Nombre de su sistema]&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#16324F;strokeWidth=2;fontSize=14;fontColor=#16324F;" vertex="1" parent="1">
-          <mxGeometry x="470" y="300" width="170" height="170" as="geometry" />
-        </mxCell>
-        <mxCell id="entidad1" value="[Entidad externa]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EE;strokeColor=#A8812B;strokeWidth=2;fontSize=13;" vertex="1" parent="1">
-          <mxGeometry x="100" y="345" width="170" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="flujo1" value="[nombre del flujo de datos]" style="endArrow=classic;html=1;rounded=0;strokeColor=#16324F;labelBackgroundColor=#FFFFFF;fontSize=11;" edge="1" parent="1" source="entidad1" target="proceso">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
+<mxfile host="65bd71144e">
+    <diagram id="contexto" name="Diagrama de contexto">
+        <mxGraphModel dx="1015" dy="395" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="titulo" parent="1" style="text;html=1;align=left;verticalAlign=top;fontSize=16;fontColor=#16324F;" value="&lt;b&gt;Diagrama de contexto — [Nombre de su sistema]&lt;/b&gt;&lt;br&gt;Equipo: [nombre del equipo]" vertex="1">
+                    <mxGeometry height="50" width="700" x="40" y="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="nota" parent="1" style="text;html=1;align=left;verticalAlign=top;fontSize=12;fillColor=#FBF7EE;strokeColor=#A8812B;spacing=10;" value="Borren esta nota antes de entregar.&lt;br&gt;• Hay UN solo proceso: su sistema completo (el círculo).&lt;br&gt;• Cada rectángulo es una entidad externa. Dupliquen el de ejemplo para crear más.&lt;br&gt;• Cada flecha es un flujo de DATOS con nombre. Para crear una, arrastren desde el borde de una figura hacia otra.&lt;br&gt;• Aquí no van almacenes de datos." vertex="1">
+                    <mxGeometry height="110" width="560" x="40" y="680" as="geometry"/>
+                </mxCell>
+                <mxCell id="proceso" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#16324F;strokeWidth=2;fontSize=14;fontColor=#16324F;" value="&lt;div&gt;&lt;font color=&quot;#16324f&quot;&gt;Sistema De Reportes&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#16324f&quot;&gt;De Mantenimiento&lt;/font&gt;&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="170" width="170" x="470" y="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="entidad1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EE;strokeColor=#A8812B;strokeWidth=2;fontSize=13;" value="Alumnos Y Docentes&amp;nbsp;" vertex="1">
+                    <mxGeometry height="80" width="170" x="100" y="345" as="geometry"/>
+                </mxCell>
+                <mxCell id="flujo1" edge="1" parent="1" source="entidad1" style="endArrow=classic;html=1;rounded=0;strokeColor=#16324F;labelBackgroundColor=#FFFFFF;fontSize=11;" target="proceso" value="Datos&amp;nbsp; de Incidencia&amp;nbsp;">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="MEdTnOpANRk7JuYe-IM--7" edge="1" parent="1" source="proceso" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.004;exitY=0.382;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="entidad1" value="">
+                    <mxGeometry relative="1" width="100" as="geometry">
+                        <Array as="points"/>
+                        <mxPoint x="370" y="345" as="sourcePoint"/>
+                        <mxPoint x="280" y="360" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="MEdTnOpANRk7JuYe-IM--8" connectable="0" parent="MEdTnOpANRk7JuYe-IM--7" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&#xa;Confirmación y seguimiento&#xa;&#xa;" vertex="1">
+                    <mxGeometry relative="1" x="-0.0807" y="6" as="geometry">
+                        <mxPoint x="2" y="-26" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="MEdTnOpANRk7JuYe-IM--10" edge="1" parent="1" source="MEdTnOpANRk7JuYe-IM--9" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="proceso">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="MEdTnOpANRk7JuYe-IM--9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EE;strokeColor=#A8812B;strokeWidth=2;fontSize=13;" value="Personal de mantenimiento" vertex="1">
+                    <mxGeometry height="80" width="160" x="770" y="345" as="geometry"/>
+                </mxCell>
+                <mxCell id="MEdTnOpANRk7JuYe-IM--11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Estado del Reporte" vertex="1">
+                    <mxGeometry height="30" width="60" x="675" y="370" as="geometry"/>
+                </mxCell>
+                <mxCell id="MEdTnOpANRk7JuYe-IM--12" edge="1" parent="1" source="proceso" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=0.975;exitY=0.382;exitDx=0;exitDy=0;exitPerimeter=0;" target="MEdTnOpANRk7JuYe-IM--9" value="">
+                    <mxGeometry relative="1" width="100" as="geometry">
+                        <Array as="points"/>
+                        <mxPoint x="630" y="370" as="sourcePoint"/>
+                        <mxPoint x="740" y="360" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="MEdTnOpANRk7JuYe-IM--13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Consulta de reportes pendientes" vertex="1">
+                    <mxGeometry height="30" width="75" x="660" y="330" as="geometry"/>
+                </mxCell>
+                <mxCell id="MEdTnOpANRk7JuYe-IM--16" edge="1" parent="1" source="MEdTnOpANRk7JuYe-IM--14" style="edgeStyle=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="proceso">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="MEdTnOpANRk7JuYe-IM--14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBF7EE;strokeColor=#A8812B;strokeWidth=2;fontSize=13;" value="&#xa;Administradores del sistema&#xa;&#xa;" vertex="1">
+                    <mxGeometry height="80" width="160" x="470" y="560" as="geometry"/>
+                </mxCell>
+                <mxCell id="MEdTnOpANRk7JuYe-IM--18" parent="1" style="text;whiteSpace=wrap;html=1;" value="Configuraciones y asignaciones" vertex="1">
+                    <mxGeometry height="40" width="200" x="550" y="510" as="geometry"/>
+                </mxCell>
+                <mxCell id="MEdTnOpANRk7JuYe-IM--19" edge="1" parent="1" source="proceso" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;exitX=0.242;exitY=0.943;exitDx=0;exitDy=0;exitPerimeter=0;" target="MEdTnOpANRk7JuYe-IM--14" value="">
+                    <mxGeometry relative="1" width="100" as="geometry">
+                        <Array as="points"/>
+                        <mxPoint x="520" y="470" as="sourcePoint"/>
+                        <mxPoint x="600" y="540" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="MEdTnOpANRk7JuYe-IM--20" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Reportes consolidados y métricas" vertex="1">
+                    <mxGeometry height="30" width="60" x="400" y="490" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
 </mxfile>
