@@ -1,0 +1,61 @@
+<mxfile host="65bd71144e">
+    <diagram id="dfd_nivel1" name="DFD Nivel 1">
+        <mxGraphModel dx="649" dy="388" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="ent_usuario" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" value="Usuario" vertex="1">
+                    <mxGeometry height="60" width="120" x="90" y="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="ent_tecnico" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" value="Técnico" vertex="1">
+                    <mxGeometry height="60" width="120" x="80" y="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="ent_admin" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" value="Administrador" vertex="1">
+                    <mxGeometry height="60" width="120" x="80" y="460" as="geometry"/>
+                </mxCell>
+                <mxCell id="proc_1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=center;" value="1&#xa;Gestionar incidentes" vertex="1">
+                    <mxGeometry height="100" width="160" x="380" y="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="proc_2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=center;" value="2&#xa;Gestionar catálogo&#xa;de ubicaciones" vertex="1">
+                    <mxGeometry height="100" width="160" x="380" y="440" as="geometry"/>
+                </mxCell>
+                <mxCell id="alm_reportes" parent="1" style="html=1;dashPattern=1 4;startSize=0;endSize=0;shape=mxgraph.flowchart.stored_data;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="[Reportes]" vertex="1">
+                    <mxGeometry height="60" width="140" x="720" y="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="alm_ubicaciones" parent="1" style="html=1;dashPattern=1 4;startSize=0;endSize=0;shape=mxgraph.flowchart.stored_data;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="[Ubicaciones]" vertex="1">
+                    <mxGeometry height="80" width="140" x="740" y="440" as="geometry"/>
+                </mxCell>
+                <mxCell id="flujo_1" edge="1" parent="1" source="ent_usuario" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.3;entryDx=0;entryDy=0;" target="proc_1" value="Reporte de incidente">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="flujo_2" edge="1" parent="1" source="proc_1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.7;exitDx=0;exitDy=0;entryX=1;entryY=0.8;entryDx=0;entryDy=0;" target="ent_usuario" value="Número de folio">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="flujo_3" edge="1" parent="1" source="ent_tecnico" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.8;entryDx=0;entryDy=0;" target="proc_1" value="Datos de actualización">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="flujo_4" edge="1" parent="1" source="proc_1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3;exitDx=0;exitDy=0;entryX=0;entryY=0.3;entryDx=0;entryDy=0;" target="alm_reportes" value="Datos de incidente">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="flujo_5" edge="1" parent="1" source="proc_1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.7;exitDx=0;exitDy=0;entryX=0;entryY=0.7;entryDx=0;entryDy=0;" target="alm_reportes" value="Actualización / Historial">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="flujo_6" edge="1" parent="1" source="alm_ubicaciones" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.2;exitDx=0;exitDy=0;entryX=0.8;entryY=1;entryDx=0;entryDy=0;" target="proc_1" value="Ubicación válida">
+                    <mxGeometry relative="1" x="0.0413" y="-2" as="geometry">
+                        <mxPoint as="offset"/>
+                        <Array as="points">
+                            <mxPoint x="740" y="440"/>
+                            <mxPoint x="500.9" y="440"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flujo_7" edge="1" parent="1" source="ent_admin" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="proc_2" value="Datos de ubicación">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="flujo_8" edge="1" parent="1" source="proc_2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="alm_ubicaciones" value="Nueva ubicación">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
