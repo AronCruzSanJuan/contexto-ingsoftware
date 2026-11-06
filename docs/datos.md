@@ -23,5 +23,5 @@ Sí, el sistema gestiona la relación entre el usuario/técnico, la incidencia y
 
 ### Estados / Categorías
 
-* **estado_incidente** = ["pendiente" | "en proceso" | "atendido" | "cancelado"]
+* **estado_incidente** = ["pendiente" | "en_proceso" | "atendido" | "cancelado"]
 

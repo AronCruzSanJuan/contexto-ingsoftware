@@ -1,0 +1,55 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="carta1" name="Carta Estructurada">
+    <mxGraphModel dx="1400" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="600" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="gA" value="Rama Aferente (Entrada)" style="rounded=1;dashed=1;fillColor=#dae8fc;strokeColor=#6c8ebf;verticalAlign=top;fontStyle=1;opacity=50;" vertex="1" parent="1">
+          <mxGeometry x="20" y="190" width="560" height="180" as="geometry"/>
+        </mxCell>
+        <mxCell id="gC" value="Rama Central (Transformación)" style="rounded=1;dashed=1;fillColor=#fff2cc;strokeColor=#d6b656;verticalAlign=top;fontStyle=1;opacity=50;" vertex="1" parent="1">
+          <mxGeometry x="620" y="190" width="380" height="180" as="geometry"/>
+        </mxCell>
+        <mxCell id="gE" value="Rama Eferente (Salida)" style="rounded=1;dashed=1;fillColor=#d5e8d4;strokeColor=#82b366;verticalAlign=top;fontStyle=1;opacity=50;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="190" width="380" height="180" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="main" value="gestionar_incidentes" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="610" y="40" width="200" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="m1" value="leer_datos_usuario()&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;↑ reporte_incidente, numero_folio&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="240" width="160" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="m2" value="leer_datos_tecnico()&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;↑ datos_actualizacion&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="240" width="160" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="m3" value="validar_entradas()&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;↓ datos crudos&lt;br&gt;↑ datos_validados&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="240" width="160" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="m4" value="procesar_logica_incidente()&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;lógica de negocio del reporte o actualización&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="240" width="160" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="m5" value="actualizar_estado_incidente()&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;cambios de estado del reporte&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="240" width="160" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="m6" value="formatear_salida_reporte()&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;prepara los datos finales&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="240" width="160" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="m7" value="almacenar_o_mostrar_resultados()&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;↓ [Reportes]&lt;br&gt;↓ [Actualización / Historial]&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="240" width="160" height="90" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;endFill=1;html=1;" edge="1" parent="1" source="main" target="m1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;endFill=1;html=1;" edge="1" parent="1" source="main" target="m2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;endFill=1;html=1;" edge="1" parent="1" source="main" target="m3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;endFill=1;html=1;" edge="1" parent="1" source="main" target="m4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;endFill=1;html=1;" edge="1" parent="1" source="main" target="m5"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;endFill=1;html=1;" edge="1" parent="1" source="main" target="m6"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;endFill=1;html=1;" edge="1" parent="1" source="main" target="m7"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+
